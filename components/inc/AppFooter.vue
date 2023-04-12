@@ -1,165 +1,23 @@
 <template>
   <div>
-    <!-- Footer -->
-    <footer class="bg-dark text-center text-white">
-      <!-- Grid container -->
-      <div class="container p-4">
-        <!-- Section: Social media -->
-        <section class="mb-4">
-          <!-- Facebook -->
-          <a
-            class="btn btn-outline-light btn-floating m-3 fLinks facebook"
-            href="#!"
-            role="button"
-          >
-            <font-awesome-icon icon="fa-brands fa-facebook-f" />
-          </a>
+    <div class="container-fluid footerContainer">
+      <footer id="dk-footer" class="dk-footer">
+        <div class="p-4 px-4">
+            <div class="container fContainer px-5">
+              <a class="" href="/">
+      <img class="px-3" style="height: 25px;"
+      src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMzcuOTMgMTYyLjU5Ij48cGF0aCBmaWxsPSIjZWEwMDkxIiBkPSJNOTUuMDUgMTA1YTEuNTEgMS41MSAwIDAgMCAyLjMuMDhjMi4wNy0yLjMxIDYuMzgtNy4xMiA4LjQtOS40OSAyLjMtMi43IDcuNjgtOC41OCAxMC43OC0xMi4yOGExLjUxIDEuNTEgMCAwIDEgMi40OS4yOGw5LjA3IDE2LjQ5YTMgMyAwIDAgMS0uMTYgMy4yNnEtMi41OSAzLjUxLTYuMzggNy45MS00LjI3IDUtMTAuMTEgMTEuMzlhMS41OSAxLjU5IDAgMCAwLS4wOSAyTDEzNy41OCAxNTdhMS41MyAxLjUzIDAgMCAxLTEuMTkgMi41aC0yNC44MWEzLjEgMy4xIDAgMCAxLTIuMzgtMS4xM2wtMTMuNjgtMTYuNzVhMS41MSAxLjUxIDAgMCAwLTIuMjUtLjA4cS0yMSAyMS4wNi00My42NCAyMS4wNS0yMC44NyAwLTM1LjM5LTEzLjMzQTQzLjY3IDQzLjY3IDAgMCAxIDAgMTE2LjEzcTAtMjMuNSAyMi41Ny0zOS4wNnM3Ljg2LTUuNDMgMTEuMDgtNy42OWExLjQzIDEuNDMgMCAwIDAgLjE5LTIuMThRMTkuNDIgNTEuMjYgMTkuNDIgMzUuNzlxMC0xNS44NSAxMC4zNy0yNS44MlE0MC4zNyAwIDU3IDBxMTYuMjEgMCAyNi43OCA5LjY2YTMxLjYzIDMxLjYzIDAgMCAxIDEwLjU3IDI0LjQgMzEuMiAzMS4yIDAgMCAxLTUuNzkgMTguNDFRODMuMTIgNjAuMzUgNjkuMiA3MS4yYTEuNTggMS41OCAwIDAgMC0uMjggMi4yek01MCA4Ni42NWExLjQ5IDEuNDkgMCAwIDAtMi0uMjljLTQgMy0xNyAxMi44LTIwIDE2LjIzcS01LjE5IDYuMS01LjE4IDEyLjkyIDAgOS43NiA3LjgyIDE3Ljg5IDguMTMgNy44MyAxNy45MSA3LjgzIDEzLjMxIDAgMzAuNTctMTYuOTVhMS42MSAxLjYxIDAgMCAwIC4xNC0yLjE0em0xNC4zNi0zOS4xMUEzMS4wOCAzMS4wOCAwIDAgMCA2OSA0Mi44YTE0LjIxIDE0LjIxIDAgMCAwIDMtOS4yNCAxMy4xMyAxMy4xMyAwIDAgMC00LjE3LTEwLjA4cS00LjE3LTMuODYtMTEuMTktMy44NmExNS40MiAxNS40MiAwIDAgMC0xMC43NyA0IDEyLjE4IDEyLjE4IDAgMCAwLTQuMzggOS42NnEwIDYuOTEgNS41IDEzLjYzczQuMTkgNS4xMyA2LjE2IDcuNWExLjUyIDEuNTIgMCAwIDAgMi4xMi4yMnoiLz48L3N2Zz4="/>
+    </a>
+    <NuxtLink class="p-3 text-decoration-none text-black-50" to="/contact">Contact</NuxtLink>
+    <NuxtLink class="p-3 text-decoration-none text-black-50" to="/jobs">Jobs</NuxtLink>
+    <NuxtLink class="p-3 text-decoration-none text-black-50" to="/privacy">Privacy</NuxtLink>
 
-          <!-- Twitter -->
-          <a
-            class="btn btn-outline-light btn-floating m-3 fLinks facebook"
-            href="#!"
-            role="button"
-            ><font-awesome-icon icon="fa-brands fa-twitter"
-          /></a>
 
-          <!-- Instagram -->
-          <a
-            class="btn btn-outline-light btn-floating m-3 fLinks facebook"
-            href="#!"
-            role="button"
-            ><font-awesome-icon icon="fa-brands fa-instagram"
-          /></a>
-
-          <!-- Youtube -->
-          <a
-            class="btn btn-outline-light btn-floating m-3 fLinks facebook"
-            href="#!"
-            role="button"
-            ><font-awesome-icon icon="fa-brands fa-youtube"
-          /></a>
-
-          <!-- Pinterest -->
-          <a
-            class="btn btn-outline-light btn-floating m-3 fLinks facebook"
-            href="#!"
-            role="button"
-            ><font-awesome-icon icon="fa-brands fa-pinterest"
-          /></a>
-
-          <!-- Google+ -->
-          <a
-            class="btn btn-outline-light btn-floating m-3 fLinks facebook"
-            href="#!"
-            role="button"
-          >
-            <font-awesome-icon icon="fa-brands fa-google-plus-g"
-          /></a>
-        </section>
-        <!-- Section: Social media -->
-
-        <hr />
-
-        <!-- Section: Form -->
-        <!-- <section class="">
-          <form action="">
-            <div class="row d-flex justify-content-center">
-              <div class="col-auto">
-                <p class="pt-2">
-                  <strong>Sign up for our newsletter</strong>
-                </p>
-              </div>
-
-              <div class="col-md-5 col-12">
-                <div class="form-outline form-white mb-4">
-                  <input
-                    type="email"
-                    id="form5Example21"
-                    class="form-control"
-                  />
-                  <label class="form-label" for="form5Example21"
-                    >Email address</label
-                  >
-                </div>
-              </div>
-
-              <div class="col-auto">
-                <button type="submit" class="btn btn-outline-light mb-4">
-                  Subscribe
-                </button>
-              </div>
             </div>
-          </form>
-        </section> -->
-        <!-- Section: Form -->
+        </div>
 
-        <!-- Section: Text -->
-        <section class="mb-4">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-            distinctio earum repellat quaerat voluptatibus placeat nam, commodi
-            optio pariatur est quia magnam eum harum corrupti dicta, aliquam
-            sequi voluptate quas.
-          </p>
-        </section>
-        <!-- Section: Text -->
-
-        <section class="mb-4">
-          <a
-            class="btn btn-outline-light btn-floating m-3 fLinks2"
-            href="#!"
-            role="button"
-          >
-            Services
-          </a>
-
-          <a
-            class="btn btn-outline-light btn-floating m-3 fLinks2"
-            href="#!"
-            role="button"
-            >Membership</a
-          >
-
-          <a
-            class="btn btn-outline-light btn-floating m-3 fLinks3 footerLogo"
-            href="#!"
-            role="button"
-          >
-            <img
-              class="logoFooter"
-              src="https://highseastudio.com/demo/coworking/multiple-pages/wp-content/themes/coworking/images/footerlogo.png"
-              alt="Co Noble Space"
-            />
-          </a>
-
-          <a
-            class="btn btn-outline-light btn-floating m-3 fLinks2"
-            href="#!"
-            role="button"
-            >Location</a
-          >
-
-          <a
-            class="btn btn-outline-light btn-floating m-3 fLinks2"
-            href="#!"
-            role="button"
-            >Contact</a
-          >
-        </section>
-      </div>
-      <!-- Grid container -->
-
-      <!-- Copyright -->
-      <div
-        class="text-center p-3"
-        style="background-color: rgba(0, 0, 0, 0.2); font-size: 11px"
-      >
-        Copyright © 2023.
-        <a class="text-white" href="#">Conoble Co.</a>
-      </div>
-      <!-- Copyright -->
-    </footer>
-    <!-- Footer -->
+</footer>
+    </div>
   </div>
 </template>
 
@@ -170,42 +28,18 @@ export default {
 </script>
 
 <style scoped>
-.fLinks2 {
-  font-size: 20px;
-  text-transform: uppercase;
-  border: none;
-  font-weight: bold;
-  color: grey;
-  letter-spacing: 0.0625em;
+
+.footerContainer{
+  background-color: #F7F7F7;
 }
 
-.logoFooter {
-  height: 120px;
-  width: 120px;
+@media only screen and (max-width: 405px){
+  .fContainer{
+   padding-right: 0 !important;
+   padding-left: 0 !important;
+  }
+
 }
 
-.footerLogo:hover {
-  background: transparent;
-}
 
-.footerLogo {
-  cursor: default;
-}
-
-.fLinks3 {
-  border: none;
-}
-
-.fLinks2:hover {
-  color: white;
-  background: transparent;
-}
-.fLinks {
-  border-radius: 100%;
-  font-size: 30px;
-}
-
-.facebook {
-  width: 60px;
-}
 </style>

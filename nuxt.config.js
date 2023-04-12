@@ -2,13 +2,13 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
 
   target: "static",
-  // ssr: "false",
-  // generate: {
-  //   fallback: true,
-  // },
+  ssr: "false",
+  generate: {
+    fallback: true,
+  },
 
   head: {
-    title: "conoblespace",
+    title: "&yet",
     htmlAttrs: {
       lang: "en",
     },
@@ -20,17 +20,21 @@ export default {
     ],
     link: [
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
-      {
-        rel: "stylesheet",
-        href: "/css/bootstrap.min.css",
-      },
+      // {
+      //   rel: "stylesheet",
+      //   href: "/css/bootstrap.min.css",
+      // },
       { rel: "stylesheet", href: "/css/custom.css" },
+      { rel: "stylesheet", type: "text/css", href: "https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" }
     ],
     script: [
-      {
-        src: "/js/bootstrap.bundle.min.js",
-        type: "text/javascript",
-      },
+      // {
+      //   src: "/js/bootstrap.bundle.min.js",
+      //   type: "text/javascript",
+      // },
+      { src: 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js' },
+      { src: 'https://code.jquery.com/jquery-3.3.1.slim.min.js' },
+      { src: 'https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js' }
     ],
   },
 

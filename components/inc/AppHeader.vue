@@ -1,151 +1,18 @@
 <template>
   <div>
-    <nav class="navbar bg-white fixed-top shadow">
-      <div class="container-fluid">
-        <NuxtLink class="navbar-brand overflow-hidden navLogo" to="/"
-          ><b>CONOBLE CO.</b>
-        </NuxtLink>
-        <!-- <div
-          class="d-flex verticleLine"
-          style="height: 50px; margin-right: 1000px"
-        >
-          <div class="vr"></div>
-        </div> -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="offcanvas offcanvas-end text-bg-dark"
-          tabindex="-1"
-          id="offcanvasNavbar"
-          aria-labelledby="offcanvasNavbarLabel"
-        >
-          <div class="offcanvas-header">
-            <!-- <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5> -->
-            <button
-              type="button"
-              class="btn-close btn-close-white"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item" data-bs-dismiss="offcanvas">
-                <NuxtLink to="/" class="nav-link overflow-hidden"
-                  >Home</NuxtLink
-                >
-              </li>
-              <li class="nav-item" data-bs-dismiss="offcanvas">
-                <NuxtLink to="/services" class="nav-link overflow-hidden"
-                  >Services</NuxtLink
-                >
-              </li>
-              <li class="nav-item" data-bs-dismiss="offcanvas">
-                <NuxtLink to="/membership" class="nav-link overflow-hidden"
-                  >Membership</NuxtLink
-                >
-              </li>
-
-              <li class="nav-item" data-bs-dismiss="offcanvas">
-                <NuxtLink to="/location" class="nav-link overflow-hidden"
-                  >Location</NuxtLink
-                >
-              </li>
-
-              <li class="nav-item" data-bs-dismiss="offcanvas">
-                <NuxtLink to="/contact" class="nav-link overflow-hidden"
-                  >Contact</NuxtLink
-                >
-              </li>
-
-              <!-- <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <hr class="dropdown-divider" />
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li> -->
-            </ul>
-            <!-- <form class="d-flex mt-3" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form> -->
-          </div>
-          <hr class="fPartition" />
-          <div class="offcanvas-footer">
-            <div
-              class="btn-toolbar m-lg-1"
-              role="toolbar"
-              aria-label="Toolbar with button groups"
-            >
-              <div class="btn-group me-2" role="group" aria-label="First group">
-                <button type="button" class="bg-transparent border-0 fIcon">
-                  <font-awesome-icon icon="fa-brands fa-facebook-f" />
-                </button>
-              </div>
-
-              <div class="btn-group me-2" role="group" aria-label="First group">
-                <button type="button" class="bg-transparent border-0 fIcon">
-                  <font-awesome-icon icon="fa-brands fa-twitter" />
-                </button>
-              </div>
-
-              <div class="btn-group me-2" role="group" aria-label="First group">
-                <button type="button" class="bg-transparent border-0 fIcon">
-                  <font-awesome-icon icon="fa-brands fa-instagram" />
-                </button>
-              </div>
-
-              <div class="btn-group me-2" role="group" aria-label="First group">
-                <button type="button" class="bg-transparent border-0 fIcon">
-                  <font-awesome-icon icon="fa-brands fa-youtube" />
-                </button>
-              </div>
-
-              <div class="btn-group me-2" role="group" aria-label="First group">
-                <button type="button" class="bg-transparent border-0 fIcon">
-                  <font-awesome-icon icon="fa-brands fa-pinterest" />
-                </button>
-              </div>
-
-              <div class="btn-group me-2" role="group" aria-label="First group">
-                <button type="button" class="bg-transparent border-0 fIcon">
-                  <font-awesome-icon icon="fa-brands fa-google-plus-g" />
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
+    <nav class="navbar border-2 border-bottom border-dark" style="background-color: #e3f2fd;">
+  <div class="container pt-5 px-5">
+    <a class="navbar-brand" href="/">
+      <img style="height: 60px;"
+      src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MjIuNjIgMjI1LjAyIj48cGF0aCBmaWxsPSIjZWEwMDkxIiBkPSJNOTUuMDUgMTA1YTEuNTEgMS41MSAwIDAgMCAyLjMuMDhjMi4wNy0yLjMxIDYuMzgtNy4xMiA4LjQtOS40OSAyLjMtMi43IDcuNjgtOC41OCAxMC43OC0xMi4yOGExLjUxIDEuNTEgMCAwIDEgMi40OS4yOGw5LjA3IDE2LjQ5YTMgMyAwIDAgMS0uMTYgMy4yNnEtMi41OSAzLjUxLTYuMzggNy45MS00LjI3IDUtMTAuMTEgMTEuMzlhMS41OSAxLjU5IDAgMCAwLS4wOSAyTDEzNy41OCAxNTdhMS41MyAxLjUzIDAgMCAxLTEuMTkgMi41aC0yNC44MWEzLjEgMy4xIDAgMCAxLTIuMzgtMS4xM2wtMTMuNjgtMTYuNzVhMS41MSAxLjUxIDAgMCAwLTIuMjUtLjA4cS0yMSAyMS4wNi00My42NCAyMS4wNS0yMC44NyAwLTM1LjM5LTEzLjMzQTQzLjY3IDQzLjY3IDAgMCAxIDAgMTE2LjEzcTAtMjMuNSAyMi41Ny0zOS4wNnM3Ljg2LTUuNDMgMTEuMDgtNy42OWExLjQzIDEuNDMgMCAwIDAgLjE5LTIuMThRMTkuNDIgNTEuMjYgMTkuNDIgMzUuNzlxMC0xNS44NSAxMC4zNy0yNS44MlE0MC4zNyAwIDU3IDBxMTYuMjEgMCAyNi43OCA5LjY2YTMxLjYzIDMxLjYzIDAgMCAxIDEwLjU3IDI0LjQgMzEuMiAzMS4yIDAgMCAxLTUuNzkgMTguNDFRODMuMTIgNjAuMzUgNjkuMiA3MS4yYTEuNTggMS41OCAwIDAgMC0uMjggMi4yek01MCA4Ni42NWExLjQ5IDEuNDkgMCAwIDAtMi0uMjljLTQgMy0xNyAxMi44LTIwIDE2LjIzcS01LjE5IDYuMS01LjE4IDEyLjkyIDAgOS43NiA3LjgyIDE3Ljg5IDguMTMgNy44MyAxNy45MSA3LjgzIDEzLjMxIDAgMzAuNTctMTYuOTVhMS42MSAxLjYxIDAgMCAwIC4xNC0yLjE0em0xNC4zNi0zOS4xMUEzMS4wOCAzMS4wOCAwIDAgMCA2OSA0Mi44YTE0LjIxIDE0LjIxIDAgMCAwIDMtOS4yNCAxMy4xMyAxMy4xMyAwIDAgMC00LjE3LTEwLjA4cS00LjE3LTMuODYtMTEuMTktMy44NmExNS40MiAxNS40MiAwIDAgMC0xMC43NyA0IDEyLjE4IDEyLjE4IDAgMCAwLTQuMzggOS42NnEwIDYuOTEgNS41IDEzLjYzczQuMTkgNS4xMyA2LjE2IDcuNWExLjUyIDEuNTIgMCAwIDAgMi4xMi4yMnoiLz48cGF0aCBmaWxsPSIjMTJhY2VmIiBkPSJNMjUyLjE2IDU5LjQ1di0zLjIzYTEuMzQgMS4zNCAwIDAgMC0xLjM0LTEuMzRoLTQzLjdhMS4zNCAxLjM0IDAgMCAwLTEuMzQgMS4zNHYzLjIzYTEuMzQgMS4zNCAwIDAgMCAxLjM0IDEuMzRjMy40MSAwIDYgMS4yIDcuNTIgMy40NiAyLjA4IDMuMTMgMS45MiA4LjE2LS40NCAxMy43OS0xLjIxIDIuODgtMTguMzUgNDIuNzQtMjYuMDcgNjAuNDhhMi41MyAyLjUzIDAgMCAxLTQuNjUtLjA4Yy03LjY5LTE4LjgzLTI0LTYzLjE0LTI1LTY2LjI0YTcgNyAwIDAgMSAuOTQtNi4xNSAxMi41NCAxMi41NCAwIDAgMSA5LTUuMjYgMS4zNiAxLjM2IDAgMCAwIDEuMjMtMS4zNHYtMy4yM2ExLjM0IDEuMzQgMCAwIDAtMS4zNS0xLjM0aC01NC42NGExLjM0IDEuMzQgMCAwIDAtMS4zNCAxLjM0djMuMjNhMS4zNSAxLjM1IDAgMCAwIDEgMS4zYzMuOTMgMSAxMy41MSA0LjI3IDE3LjM1IDExLjk0IDEuMTcgMi4zNCAzNy44OCA4NS4xIDM5LjI3IDg4LjU1YTMxLjYxIDMxLjYxIDAgMCAxIDEuNzggNWMwIC41Ny0uMzUgMi42Mi0zLjYyIDkuMjQtNy44MyAxNS44OS0xOS4xOSAzNC4zNC0zNy42NCAzNS44Ni00LjcuMzgtNS41NS0zLjMyLTYuMzctOS40N2EyMi41NSAyMi41NSAwIDAgMC0xLjY2LTcgMTIuNTQgMTIuNTQgMCAwIDAtOS4yMi02LjUgMTMuMDUgMTMuMDUgMCAwIDAtMTEuMTYgM2MtNS41OSA1LjIxLTUuNyAxNC4zNS0yLjU5IDIwLjE4czguNzUgOS45IDE2LjQxIDEyYTQ0IDQ0IDAgMCAwIDExLjU3IDEuNDVjOCAwIDE2LjItMiAyMi4xMy01LjU3IDEwLjI5LTYuMjYgMTguMzEtMTcuMDggMjUuNDUtMjcuODQgMTIuNDMtMTguNzcgMjEuNjItMzkuMzUgMzAuNTEtNTkuMjYgNi41Ny0xNC43MSAxMy4zNi0yOS45MiAyMS40LTQ0LjI2QzIzNy4wOSA3MCAyNDQuMjkgNjEuODEgMjUxIDYwLjc4YTEuMzQgMS4zNCAwIDAgMCAxLjE2LTEuMzN6bTQzLjAzLTcuOGMtMjEuMTIgMC00MC4xNyAxNC00Ny40MSAzNC44LTkuNjEgMjcuNjEgMS44NSA1OC43IDI2LjA5IDcwLjc4YTQ3LjUxIDQ3LjUxIDAgMCAwIDIxLjMyIDQuNzdoLjEyYzI1LjA4IDAgNDQuODUtMTkuNTMgNDUuODktMjIuMDlhMS40NyAxLjQ3IDAgMCAwLS4zMi0xLjY4bC00LjU2LTQuM2ExLjMzIDEuMzMgMCAwIDAtMS43Mi0uMWMtLjE5LjEzLTE2LjE5IDExLjkyLTMyIDExLjkyYTI3Ljc0IDI3Ljc0IDAgMCAxLTYuNDctLjczYy0xMC43MS0yLjU1LTE5LjI2LTEwLjU1LTI0LjA1LTIyLjUyYTU3LjcyIDU3LjcyIDAgMCAxLTMuNDUtMTguNzIgMi40NSAyLjQ1IDAgMCAxIC42OS0xLjggMi41NiAyLjU2IDAgMCAxIDEuODMtLjc5SDMzOGE1LjIgNS4yIDAgMCAwIDQtMS44OCA1LjEgNS4xIDAgMCAwIDEuMTUtNC4xNmMtNC44OS0yOC4wNy0yMS45MS00My41LTQ3Ljk2LTQzLjV6bTIxLjM3IDM3LjI1YTQuMjUgNC4yNSAwIDAgMS0zLjIzIDEuNWgtNDAuNzZhMi41NSAyLjU1IDAgMCAxLTIuNDctMy4xYzEuODMtOC4wOCAzLjg5LTE1LjE2IDEwLjU0LTIwYTI2LjEgMjYuMSAwIDAgMSAxNS4xMS00Ljg2IDIzLjA3IDIzLjA3IDAgMCAxIDUgLjUzYzkgMiAxNC42NyA5LjYzIDE2Ljc0IDIyLjY2YTQgNCAwIDAgMS0uOTMgMy4yN3ptMTA0Ljc3IDQ0Ljk2LTEuMjEtMy4xMWExLjMxIDEuMzEgMCAwIDAtLjg4LS44IDEuMzYgMS4zNiAwIDAgMC0xLjE3LjJjLS4xLjA4LTkuOTUgNy4zMy0xMy40OCA5LjYyLTQuNjMgMy05LjU1IDQuMTEtMTMuMTkgMi45NS0yLjY1LS44Ni00LjYyLTIuOS01Ljg1LTYuMDYtMy41NS05LjEzLTIuMzctNDIuOS0xLjczLTYxIC4xOC01LjIuMzItOS4zMS4zMi0xMS42M2EyLjU0IDIuNTQgMCAwIDEgMi41My0yLjUzaDMzYTEuMzQgMS4zNCAwIDAgMCAxLjMzLTEuMzlWNTBhMS4zNCAxLjM0IDAgMCAwLTEuMzUtMS4zNGgtMzNhMi41NCAyLjU0IDAgMCAxLTIuNTMtMi41M1YxMWExLjM0IDEuMzQgMCAwIDAtMS4zNC0xLjM0aC04LjUxYTEuMzUgMS4zNSAwIDAgMC0xLjI3IDEuMmMtNS4wOSA0MC0yNC40MyA0MC41OS0zMi42OSA0MC44M0ExLjM0IDEuMzQgMCAwIDAgMzM5IDUzdjcuMDhhMS4zNCAxLjM0IDAgMCAwIDEuMzQgMS4zNGgxNy42NGEyLjUzIDIuNTMgMCAwIDEgMi40OSAyLjU4djY1YzAgMS4xOCAwIDIuMzgtLjA1IDMuNTktLjExIDUuNzQtLjIzIDExLjY3IDIgMTYuOTUgMyA3LjA5IDcuNyAxMS4yNiAxNCAxMi40MWEyMC44NSAyMC44NSAwIDAgMCAzLjYzLjMxYzE1Ljk1IDAgMzUuNTYtMTYuODcgNDIuMTgtMjMuODguNjItLjU5LjYyLS41OS0uOS00LjUyeiIvPjwvc3ZnPg=="/>
+    </a>
+    <NuxtLink to="/contact">
+      <button
+      class="btn border-3 border-dark rounded-0 p-3 px-4"
+      type="submit">Contact</button>
+    </NuxtLink>
+    </div>
+</nav>
   </div>
 </template>
 
@@ -155,54 +22,15 @@ export default {
 };
 </script>
 
+
 <style scoped>
-.offcanvas-footer {
-  padding: 1rem 1rem;
+.btn{
+ background-color: #f48997;
+ border: 2px solid;
+box-shadow: 5px 5px 0 #000;
 }
 
-.navbar {
-  min-height: 70px;
-  border-bottom: 1px solid white;
+.btn:hover{
+ background-color: #f48;
 }
-
-.navLogo {
-  color: rgba(0, 0, 0, 10);
-  letter-spacing: 0.0625em;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-
-.fIcon {
-  color: grey;
-}
-
-.fIcon:hover {
-  color: white;
-}
-
-.nav-link {
-  color: grey;
-  text-transform: uppercase;
-  letter-spacing: 0.0625em;
-  font-size: 13px;
-}
-
-.nav-link:hover {
-  color: white;
-}
-
-/* @media only screen and (max-width: 1200px) {
-  .verticleLine {
-    visibility: hidden;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .verticleLine {
-    visibility: hidden;
-  }
-}
-@media only screen and (max-width: 425px) {
-  .verticleLine {
-    visibility: hidden;
-  }
-} */
 </style>
